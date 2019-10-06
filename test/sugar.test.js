@@ -136,7 +136,7 @@ describe("Object.get", () => {
   });
 });
 
-describe.only("Object.has", () => {
+describe("Object.has", () => {
   test("returns true if the object has the give key", () => {
     const obj1 = { name: "Sally", location: "Leeds" };
     expect(Object.has(obj1, "name")).toBe(true);
