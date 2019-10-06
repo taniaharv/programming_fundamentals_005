@@ -3,7 +3,7 @@ const setUpGlobalObject = require("../lib/sugar");
 // Invoking this function adds the new methods to the Global Object
 setUpGlobalObject();
 
-describe.only("Object.size", () => {
+describe("Object.size", () => {
   test("returns the correct size when given an object", () => {
     expect(
       Object.size({
@@ -32,7 +32,7 @@ describe.only("Object.size", () => {
   });
 });
 
-describe("Object.min", () => {
+describe.only("Object.min", () => {
   test("returns the smallest number of all values in an object", () => {
     expect(
       Object.min({
