@@ -54,7 +54,7 @@ describe("Object.min", () => {
   });
 });
 
-describe.only("Object.max", () => {
+describe("Object.max", () => {
   test("returns the largest number of all values in an object", () => {
     expect(
       Object.max({
@@ -76,7 +76,7 @@ describe.only("Object.max", () => {
   });
 });
 
-describe("Object.clone", () => {
+describe.only("Object.clone", () => {
   test("returns a copy of the object", () => {
     const person1 = {
       name: "Sally",
