@@ -76,7 +76,7 @@ describe("Object.max", () => {
   });
 });
 
-describe.only("Object.clone", () => {
+describe("Object.clone", () => {
   test("returns a copy of the object", () => {
     const person1 = {
       name: "Sally",
@@ -136,7 +136,7 @@ describe("Object.get", () => {
   });
 });
 
-describe("Object.has", () => {
+describe.only("Object.has", () => {
   test("returns true if the object has the give key", () => {
     const obj1 = { name: "Sally", location: "Leeds" };
     expect(Object.has(obj1, "name")).toBe(true);
