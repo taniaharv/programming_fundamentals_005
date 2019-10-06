@@ -32,7 +32,7 @@ describe("Object.size", () => {
   });
 });
 
-describe.only("Object.min", () => {
+describe("Object.min", () => {
   test("returns the smallest number of all values in an object", () => {
     expect(
       Object.min({
@@ -54,7 +54,7 @@ describe.only("Object.min", () => {
   });
 });
 
-describe("Object.max", () => {
+describe.only("Object.max", () => {
   test("returns the largest number of all values in an object", () => {
     expect(
       Object.max({
