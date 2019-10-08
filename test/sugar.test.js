@@ -272,7 +272,7 @@ describe("Object.addAll", () => {
   });
 });
 
-describe("Object.find", () => {
+describe.only("Object.find", () => {
   test("returns the found value if the object contains a value that matches the matcher function", () => {
     function matcherFunc(val) {
       return val > 99;
