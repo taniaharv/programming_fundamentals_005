@@ -272,7 +272,7 @@ describe("Object.addAll", () => {
   });
 });
 
-describe.only("Object.find", () => {
+describe("Object.find", () => {
   test("returns the found value if the object contains a value that matches the matcher function", () => {
     function matcherFunc(val) {
       return val > 99;
@@ -285,9 +285,11 @@ describe.only("Object.find", () => {
       d: 44
     };
 
+    const expected = [220];
+
     const result = Object.find(obj, matcherFunc);
 
-    expect(result).toBe(220);
+    expect(result).toEqual(expected);
   });
 
   test("returns null if the object does not contain a value that matches the matcher function", () => {
@@ -302,9 +304,11 @@ describe.only("Object.find", () => {
       d: 12
     };
 
+    const expected = [];
+
     const result = Object.find(obj, matcherFunc);
 
-    expect(result).toBe(null);
+    expect(result).toEqual(expected);
   });
 });
 
@@ -344,7 +348,7 @@ describe("Object.every", () => {
   });
 });
 
-describe("Object.some", () => {
+describe.only("Object.some", () => {
   test("returns true if one or more values in the object pass the condition of the matcher the function", () => {
     function matcherFunc(val) {
       return val > 99;
